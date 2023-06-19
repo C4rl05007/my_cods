@@ -1,0 +1,12 @@
+total_figs = int(input("Digite o total de figurinhas: "))
+figs_compradas = int(input("Digite quantas figurinhas já tem: "))
+
+lista_funcao = list(range(1, total_figs + 1))
+
+for c in range(figs_compradas):
+    num_figs = int(input("Digite o numero da figurinha: "))
+    if num_figs in lista_funcao:
+        lista_funcao.remove(num_figs)
+
+figs_restante = len(lista_funcao)
+print(figs_restante)
